@@ -1,0 +1,468 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../img/Space_fon.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: red;
+  counter-reset: hit;
+  cursor: url(../img/free-icon-center-focus-1310678.png), crosshair;
+}
+.ufo {
+  width: 4.6875%;
+  height: 8.3333%;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  top: -10%;
+}
+.ufo input {
+  position: absolute;
+  top: -200px;
+}
+.radar {
+  width: 12.94%;
+  height: 30.68%;
+  background-image: url(../gif/Radar.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+}
+input:checked {
+  counter-increment: hit;
+}
+input:checked + label {
+  display: none;
+}
+.result {
+  position: absolute;
+  bottom: 3%;
+  left: 14%;
+  font-weight: bold;
+  font-size: 60px;
+}
+.result::after {
+  content: counter(hit);
+}
+.ship {
+  width: 12%;
+  height: 16%;
+  background-image: url(../img/Space_ship4.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: 8.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.ufo label {
+  background-image: url(../gif/UFO.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: url(../img/free-icon-center-focus-1310678.png), crosshair;
+}
+
+.ufo_1 {
+  animation-name: star1;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 3;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+.ufo_2 {
+  animation-name: star2;
+  animation-duration: 16s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 3;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+.ufo_3 {
+  animation-name: star3;
+  animation-duration: 20s;
+  animation-timing-function: steps(5);
+  animation-delay: 2s;
+  animation-iteration-count: 3;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+.ufo_4 {
+  animation-name: star4;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 3;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+.ufo_5 {
+  animation-name: star5;
+  animation-duration: 16s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2s;
+  animation-iteration-count: 3;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+.ufo_6 {
+  animation-name: star6;
+  animation-duration: 16s;
+  animation-timing-function: steps(5);
+  animation-delay: 1s;
+  animation-iteration-count: 3;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+.ufo_7 {
+  animation-name: star7;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 3;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes star1 {
+  0% {
+    top: 0%;
+    left: 7%;
+  }
+10% {
+    top: 8%;
+    left: 37%;
+}
+  20% {
+    top: 13%;
+    left: 47%;
+    transform: scale(0.5);
+  }
+  30% {
+    top: 20%;
+    left: 67%;
+  }
+  40% {
+    top: 39%;
+    left: 97%;
+  }
+50% {
+    top: 45%;
+    left: 75%;
+}
+  60% {
+    top: 52%;
+    left: 65%;
+    transform: scale(1);
+  }
+  70% {
+    top: 65%;
+    left: 32%;
+  }
+  80% {
+    top: 78%;
+    left: 8%;
+  }
+  90% {
+    top: 89%;
+    left: 40%;
+  }
+  100% {
+    top: 91.5%;
+    left: 33%;
+  }
+}
+@keyframes star2 {
+  0% {
+    top: 0%;
+    left: 21%;
+  }
+10% {
+    top: 13%;
+    left: 37%;
+}
+  20% {
+    top: 13%;
+    left: 31%;
+  }
+  30% {
+    top: 26%;
+    left: 61%;
+  }
+  40% {
+    top: 39%;
+    left: 91%;
+  }
+50% {
+    top: 13%;
+    left: 73%;
+}
+  60% {
+    top: 52%;
+    left: 65%;
+  }
+  70% {
+    top: 65%;
+    left: 32%;
+  }
+  80% {
+    top: 78%;
+    left: 8%;
+  }
+  90% {
+    top: 89%;
+    left: 40%;
+  }
+  100% {
+    top: 91.5%;
+    left: 38%;
+  }
+}
+@keyframes star3 {
+  0% {
+    top: 0%;
+    left: 35%;
+  }
+  10% {
+    top: 25%;
+    left: 5%;
+  }
+20% {
+    top: 30%;
+    left: 57%;
+}
+  30% {
+    top: 25%;
+    left: 89%;
+  }
+  40% {
+    top: 25%;
+    left: 30%;
+  }
+50% {
+    top: 13%;
+    left: 77%;
+}
+  60% {
+    top: 45%;
+    left: 20%;
+  }
+  70% {
+    top: 55%;
+    left: 90%;
+  }
+  80% {
+    top: 65%;
+    left: 35%;
+  }
+  90% {
+    top: 75%;
+    left: 75%;
+  }
+  100% {
+    top: 91.5%;
+    left: 43%;
+  }
+}
+@keyframes star4 {
+  0% {
+    top: 0%;
+    left: 49%;
+  }
+  10% {
+    top: 25%;
+    left: 85%;
+  }
+20% {
+    top: 13%;
+    left: 94%;
+}
+  30% {
+    top: 35%;
+    left: 44%;
+  }
+  40% {
+    top: 39%;
+    left: 20%;
+    transform: scale(0.5);
+  }
+50% {
+    top: 13%;
+    left: 7%;
+}
+  60% {
+    top: 45%;
+    left: 50%;
+  }
+  70% {
+    top: 55%;
+    left: 77%;
+    transform: scale(1);
+  }
+  80% {
+    top: 65%;
+    left: 37%;
+  }
+  90% {
+    top: 75%;
+    left: 70%;
+  }
+  100% {
+    top: 91.5%;
+    left: 48%;
+  }
+}
+@keyframes star5 {
+  0% {
+    top: 0%;
+    left: 64%;
+  }
+  10% {
+    top: 25%;
+    left: 92%;
+  }
+20% {
+    top: 30%;
+    left: 37%;
+}
+  30% {
+    top: 35%;
+    left: 67%;
+  }
+  40% {
+    top: 25%;
+    left: 45%;
+  }
+  50% {
+    top: 45%;
+    left: 11%;
+  }
+60% {
+    top: 45%;
+    left: 87%;
+}
+  70% {
+    top: 55%;
+    left: 50%;
+  }
+  80% {
+    top: 65%;
+    left: 14%;
+  }
+  90% {
+    top: 75%;
+    left: 35%;
+  }
+  100% {
+    top: 91.5%;
+    left: 53%;
+  }
+}
+@keyframes star6 {
+  0% {
+    top: 0%;
+    left: 79%;
+  }
+  10% {
+    top: 25%;
+    left: 39%;
+  }
+20% {
+    top: 13%;
+    left: 67%;
+}
+  30% {
+    top: 35%;
+    left: 15%;
+  }
+  40% {
+    top: 25%;
+    left: 30%;
+  }
+50% {
+    top: 30%;
+    left: 94%;
+}
+  60% {
+    top: 45%;
+    left: 40%;
+  }
+  70% {
+    top: 55%;
+    left: 85%;
+  }
+  80% {
+    top: 35%;
+    left: 95%;
+  }
+  90% {
+    top: 75%;
+    left: 40%;
+  }
+  100% {
+    top: 91.5%;
+    left: 58%;
+  }
+}
+@keyframes star7 {
+  0% {
+    top: 0%;
+    left: 94%;
+  }
+  10% {
+    top: 25%;
+    left: 81%;
+  }
+20% {
+    top: 13%;
+    left: 67%;
+}
+  30% {
+    top: 35%;
+    left: 77%;
+  }
+  40% {
+    top: 25%;
+    left: 60%;
+    transform: scale(0.5);
+  }
+20% {
+    top: 30%;
+    left: 37%;
+}
+  60% {
+    top: 45%;
+    left: 50%;
+  }
+  70% {
+    top: 55%;
+    left: 40%;
+  }
+  80% {
+    top: 65%;
+    left: 65%;
+    transform: scale(1);
+  }
+  90% {
+    top: 75%;
+    left: 70%;
+  }
+  100% {
+    top: 91.5%;
+    left: 63%;
+  }
+}
